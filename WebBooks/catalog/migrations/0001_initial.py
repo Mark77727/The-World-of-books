@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
             name='Book',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(help_text='Введите имя автора', max_length=100, verbose_name='Имя автора')),
+                ('title', models.CharField(help_text='Введите название книги', max_length=100, verbose_name='Название книги')),
                 ('summary', models.TextField(help_text='Введите краткое описание книги', max_length=1000, verbose_name='Аннотация книги')),
                 ('isbn', models.CharField(help_text='Должно содержать 13 символов', max_length=13, verbose_name='ISBN книги')),
                 ('author', models.ManyToManyField(help_text='Выберите автора книги', null=True, to='catalog.author', verbose_name='Автор книги')),
